@@ -15,12 +15,18 @@ Note that this only overrides CapsLock for the key combinations below. Otherwise
 ## Installation
 Install AutoHotKey, then run the desktop_switcher.ahk script (open with AutoHotKey if prompted). I would recommend putting it in your startup folder and it'll be invoked on login.
 
+To do that, press “Win + R,” paste the path shown below and press the Enter button.
+
+`%appdata%\Microsoft\Windows\Start Menu\Programs\Startup`
+
+Once you create a shortcut and select the path of your AutoHotKey script it will be automatically launched at boot start.
+
 ## Hotkeys
-        <CapsLock> + <Num>      - Switches to virtual desktop "num".
-        <CapsLock> + C          - Create a new virtual desktop
-        <CapsLock> + D          - Delete the current virtual desktop
-        <CapsLock> + A or P     - Switch to virtual desktop on left
-        <CapsLock> + S or N     - Switch to virtual desktop on right
+        <Win> + <Num>      - Switches to virtual desktop "num".
+        <Win> + C          - Create a new virtual desktop
+        <Win> + D          - Delete the current virtual desktop
+        <Win> + A or P     - Switch to virtual desktop on left
+        <Win> + S or N     - Switch to virtual desktop on right
 
 To change the key mappings, modify the bottom of the script and reload. Be sure to read about the [symbols AutoHotKey uses](https://autohotkey.com/docs/Hotkeys.htm) for key mapping.
 
