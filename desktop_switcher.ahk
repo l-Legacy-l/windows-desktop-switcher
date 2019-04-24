@@ -155,3 +155,13 @@ LWin & s::switchDesktopByNumber(CurrentDesktop + 1)
 LWin & a::switchDesktopByNumber(CurrentDesktop - 1)
 LWin & c::createVirtualDesktop()
 LWin & d::deleteVirtualDesktop()
+
+;adjust volume with shift+mousewheel up and down
++WheelUp::Send {Volume_Up 1}
++WheelDown::Send {Volume_Down 1}
+
+
+;play/pause and next previous keys with shift+pgup etc.
++F11::Send {Media_Play_Pause}
++F12::Send {Media_Next}
++F10::Send {Media_Prev}
